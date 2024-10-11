@@ -1,0 +1,16 @@
+variable "tenant" {}
+variable "name" {}
+variable "server_name" {}
+variable "environment" {}
+variable "rg_name" {}
+variable "rg_location" {}
+variable "pgsql_prv_dns_id" {}
+variable "pgsql_subnet_ids" {}
+variable "database_version" {}
+variable "database_sku" {}
+variable "auto_grow_enabled" {}
+variable "storage_mb" {}
+variable "storage_tier" {}
+variable "backup_retention_days" {}
+variable "high_availability" {}
+variable "geo_redundant_backup_enabled" {}
