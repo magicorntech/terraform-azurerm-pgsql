@@ -15,7 +15,7 @@ resource "azurerm_postgresql_flexible_server" "main" {
   storage_mb                    = var.storage_mb
   storage_tier                  = var.storage_tier
   auto_grow_enabled             = var.auto_grow_enabled
-  zone                          = "1"
+  zone                          = var.zone
 
   dynamic "high_availability" {
     for_each = (var.high_availability == true) ? [true] : []
