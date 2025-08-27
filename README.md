@@ -13,7 +13,8 @@ module "pgsql-master" {
   rg_location      = azurerm_resource_group.main.location
   pgsql_prv_dns_id = "/subscriptions/12345678-1234-1234-1234-123456789abc/resourceGroups/magicorn-main-rg-bastion/providers/Microsoft.Network/privateDnsZones/magicorn.postgres.database.azure.com"
   pgsql_subnet_ids = module.network.pgsql_subnet_ids
-
+  zone = "2" 
+  
   # MySQL Configuration
   server_name                  = "master"
   database_version             = "14"
