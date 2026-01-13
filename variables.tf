@@ -14,3 +14,4 @@ variable "storage_tier" {}
 variable "backup_retention_days" {}
 variable "high_availability" {}
 variable "geo_redundant_backup_enabled" {}
+variable "zone" {}
